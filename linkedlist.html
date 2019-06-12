@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>linkedlist</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #808080; font-style: italic;}
+.s1 { color: #000000;}
+.s2 { color: #000080; font-weight: bold;}
+.s3 { color: #0000ff;}
+</style>
+</head>
+<body bgcolor="#ffffff">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+linkedlist</font>
+</center></td></tr></table>
+<pre><span class="s0">//Please note that the Linked List Class (Object Oriented Design) is not implemented in Part 1 of the test</span>
+//but rather in Part 2 of the test. This is to reduce computer memory and data usage for this part of the exam
+//as object oriented programming processing is slightly lengthier for the computer on an architectural level.
+
+
+// Node Constructor
+<span class="s2">class </span>Node{
+    constructor(data){
+        <span class="s2">this</span>.data = data;
+        <span class="s2">this</span>.next = <span class="s2">null</span>;
+        }
+    }
+
+<span class="s0">//Simple Linked List with Hardcoded Data</span>
+
+//Instantiate First Node
+<span class="s2">const </span>head = <span class="s2">new </span>Node(<span class="s3">0</span>);
+<span class="s2">let </span>counter = <span class="s3">0</span>;
+<span class="s2">let </span>value = <span class="s3">1</span>;
+<span class="s2">let </span>current = head;
+
+<span class="s0">//While loop to build link list chain with values 1 through 10</span>
+<span class="s2">while</span>(counter &lt; <span class="s3">10</span>){
+    current.next = <span class="s2">new </span>Node (value);
+    current = current.next;
+    counter += <span class="s3">1</span>;
+    value += <span class="s3">1</span>;
+}
+
+<span class="s0">//Have pointer &quot;current&quot; point to head of linked list</span>
+current = head;
+
+<span class="s0">//Print</span>
+<span class="s2">while</span>(current !== <span class="s2">null</span>){
+    console.log(current.data);
+    current = current.next;
+}</pre>
+</body>
+</html>
