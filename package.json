@@ -1,0 +1,8 @@
+{
+  "name": "Linked List",
+  "version": "1.0.0",
+  "description": "Coding Test - Part 1: Simple single linked list using Node data structure.",
+  "main": "index.js",
+  "author": "Monica Amezquita",
+  "license": "ISC"
+}
