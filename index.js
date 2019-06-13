@@ -1,7 +1,3 @@
-//Please note that the Linked List Class (Object Oriented Design) is not implemented in Part 1 of the test
-//but rather in Part 2 of the test. This is to reduce computer memory and data usage for this part of the exam
-//as object oriented programming processing is slightly lengthier for the computer on an architectural level.
-
 
 // Node Constructor
 class Node{
